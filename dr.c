@@ -178,7 +178,7 @@ char sub_418090();
 int transformJoystickReadValue_418150();
 
 int   setPaletteValueWithFloats(double, double, double); // idb
-int   sub_418B00(float, float, float); // idb
+int   sub_418B00(double, double, double); // idb
 
 int   loadPaletteMenu();
 signed int isVesaCompatible();
