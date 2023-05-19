@@ -1,9 +1,10 @@
 #include "sound.h"
-#include "../asset/bpaUtil.h"
+
+#ifndef DR_NO_SOUND
+
 #include "stdlib.h"
-
+#include "../asset/bpaUtil.h"
 #include "../config.h"
-
 
 #define FSOUND_LOOP_NORMAL   0x00000002  /* For forward looping samples. */
 FMUSIC_MODULE *musicModule = NULL; // weak
@@ -350,3 +351,86 @@ void   loadMusic(int a1, char * music1, int a3, char* soundEffect)
 		//free(soundEffectStream);
 	}
 }
+
+#else
+
+int   getSizeMusic(char * music)
+{
+    return 0;
+}
+
+void *  getMusicStream(char* musicName)
+{
+    return 0;
+}
+
+int   sub_43C1B0(unsigned __int8 channelNumber, int a2, signed int a3)
+{
+    return 0;
+}
+
+int sub_43C1F0()
+{
+    return 0;
+}
+
+char __stdcall sub_43C220(int a1, int a2, signed int a3, int a4)//void streamcallback(FSOUND_STREAM *stream, void *buff, int len, int param)
+{
+    return (char)(0);
+}
+
+int   musicSetVolume(signed int a1)
+{
+    return 0;
+}
+
+int   musicSetmusicVolume(signed int a1)
+{
+    return 0;
+}
+
+int   setMusicVolume(signed int a1)
+{
+    return 0;
+}
+
+char   musicSetOrder(signed int a1)
+{
+    return 0;
+}
+
+int musicPlayMusic()
+{
+    return 0;
+}
+
+int   loadMenuSoundEffect(unsigned __int8 channelNumber, char soundNumber, int a3, int a4, int a5)
+{
+    return 0;
+}
+
+int stopSong()
+{
+    return 0;
+}
+
+int   stopSoundChannel_43C3E0(unsigned __int8 a1)
+{
+    return 0;
+}
+
+int stopAndOpenMusic()
+{
+    return 0;
+}
+
+int freeMusic()
+{
+    return 0;
+}
+
+void   loadMusic(int a1, char * music1, int a3, char* soundEffect)
+{
+    return;
+}
+#endif

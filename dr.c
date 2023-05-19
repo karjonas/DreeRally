@@ -15725,8 +15725,10 @@ LABEL_20:
   
   SDL_UpdateRect(screenSurfaceTemp, 0, 0, screenSurfaceTemp->w, screenSurfaceTemp->h);
 LABEL_49:
+#ifndef DR_NO_SOUND
   if ( !mainArgs.configNoSound )
     FSOUND_Update();
+#endif
   for ( result = SDL_PollEvent(&event); result; result = SDL_PollEvent(&event) ) //&event v65 es event.key.keysym.scancode
   {
     switch (event.type)
@@ -16200,9 +16202,13 @@ char * error;
   v1 = 0;
   if ( mainArgs.configWindow )
     v1 = 0;
+#ifndef DR_NO_SOUND
   FSOUND_GetVersion();
+#endif
   if ( a1 < 3.75 )
     exit(-1);
+
+#ifndef DR_NO_SOUND
   if ( !mainArgs.configNoSound && (unsigned __int8)FSOUND_Init(44100, 64, 0) )
   {
 	 #ifndef _NO_MINIFMOD
@@ -16221,6 +16227,9 @@ char * error;
   {
     mainArgs.configNoSound = 1;
   }
+#else
+  mainArgs.configNoSound = 1;
+#endif
 
   if ( SDL_Init(SDL_INIT_NOPARACHUTE | SDL_INIT_JOYSTICK | SDL_INIT_VIDEO))
     exit(-1);
