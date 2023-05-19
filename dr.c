@@ -1401,7 +1401,7 @@ int circuitRecordSeconds_501260; // weak
 int dword_501264; // weak
 float trxDRVDat_501280[2048]; // weak
 _UNKNOWN unk_501680; // weak
-int trxSHA2Bpk_501A80; // weak
+extern int trxSHA2Bpk_501A80; // weak
 char trxSKITab_501AA0[257]; // weak
 
 

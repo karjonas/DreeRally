@@ -240,7 +240,7 @@ char aSideAtLeastYou[43] = "side, at least you lived to tell the tale."; // weak
 _UNKNOWN unk_454F08; // weak
 
  // weak
-char bigLetterSpacing_445848[] ;
+extern char bigLetterSpacing_445848[] ;
 
 int dword_45678C = 5; // weak
 

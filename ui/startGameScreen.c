@@ -8,7 +8,7 @@
 #include <string.h>
 #include <SDL.h>
 
-int textureTemp[0xFFFFFu]; // weak
+extern int textureTemp[0xFFFFFu]; // weak
 
 //----- (00427380) --------------------------------------------------------
 int apogeeScreen()

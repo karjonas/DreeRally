@@ -14,7 +14,7 @@ void *animationSoundEffectByFrame_45EEA4; // idb
 
 char byte_4610C0[256]; // weak
 char byte_461F18; // weak
-void *DstBuf; // idb
+extern void *DstBuf; // idb
 int dword_4456B0[] = { 0,1,3,7,0xf,0x1f,0x3f,0x7f,0xff,0x1ff,0x3ff,0x7ff,0xfff }; // weak
 int dword_456B38 = 0; // weak
 int dword_456B3C = 0; // weak

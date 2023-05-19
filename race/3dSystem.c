@@ -20,7 +20,7 @@ int dword_4A6AFC; // weak
 _UNKNOWN unk_46ED00; // weak
 _UNKNOWN unk_4A7BC0; // weak
 _UNKNOWN unk_4AA400; // weak
-int textureTemp[0xFFFFFu];
+extern int textureTemp[0xFFFFFu];
 
 //----- (0040A360) --------------------------------------------------------
 int processSceFile_40A360()

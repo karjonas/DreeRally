@@ -226,7 +226,7 @@ extern void* circuitMatrixHxW_5034F8;
 extern int circuitWidth_464F40; // weak
 extern int currentDriverSelectedIndex_503518; // weak
 extern void* obstacleBpk; // idb;
-void* participantCarBpk_5034FC; // idb
+extern void* participantCarBpk_5034FC; // idb
 extern int isRaceFinish_456AC8;
 extern int dword_4A9EA4; // weak;
 

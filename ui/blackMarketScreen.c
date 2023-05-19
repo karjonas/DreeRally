@@ -17,8 +17,8 @@
 #include "util/menus.h"
 #include "util/popup.h"
 
-_UNKNOWN unk_444160;
- _UNKNOWN unk_45FDC4; // weak;
+extern _UNKNOWN unk_444160;
+extern _UNKNOWN unk_45FDC4; // weak;
 int minesAvailable_45EFF0; // weak
 int spikesAvailable_45EFF4; // weak
 int rocketAvailable_45EFF8; // weak

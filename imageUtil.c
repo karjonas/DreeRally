@@ -7,7 +7,7 @@
 
 const int DEFAULT_BIGLETTER_SPACING_OFFSET = -23;
 
- void *choo2Bpk; // idb
+extern void *choo2Bpk; // idb
 
  char  unk_445928[] = {9,0xc,
 					  9,9,9,9,9,9,9,9,9,9, 
